@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import auth from '@react-native-firebase/auth';
 import { GoogleSignin, GoogleSigninButton } from '@react-native-google-signin/google-signin';
-import Authentication from './screens/Authentication';
-import Authenticated from './screens/Authenticated';
+import Authentication from './src/Authentication';
+import Authenticated from './src/Authenticated';
 
 export default function App() {
   const [authenticated, setAuthenticated] = useState(false);
