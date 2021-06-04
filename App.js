@@ -4,13 +4,18 @@ import { GoogleSignin, GoogleSigninButton } from '@react-native-google-signin/go
 import Authentication from './src/Authentication';
 import Authenticated from './src/Authenticated';
 
+//const clientID='1050905303299-ge3haemj3fon4tjdela7ek9hqampomp5.apps.googleusercontent.com';
+//const clientID='1050905303299-4prq801ckkprmug17gav79rc0roklgg0.apps.googleusercontent.com';
+//const clientID='1050905303299-5g9r66idaos4b8ldsegca2k41dfg1quq.apps.googleusercontent.com';
+const clientID='1050905303299-ge3haemj3fon4tjdela7ek9hqampomp5.apps.googleusercontent.com';
+
 export default function App() {
   const [authenticated, setAuthenticated] = useState(false);
 
   useEffect(() => {
+    console.log('clientID',clientID);
     GoogleSignin.configure({
-      webClientId:
-        '1050905303299-fqo3vaco2admbjt9u622097k9caa5pa3.apps.googleusercontent.com',
+      webClientId: clientID,
     });
   }, []);
 
